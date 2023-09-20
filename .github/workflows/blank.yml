@@ -14,9 +14,8 @@ on:
   workflow_dispatch:
     inputs:
       in-app-update-priority:
-        name: "In-App Update Priority"     
         required: true
-        description: "Set the priority for in-app update. Default to 0 for no banner. 1 for showing in-app update banner. 5 for blocking in-app immediate update"
+        description: 'Priority of the release (0=Default, 1=Flexible, 5=Immediate)'
         default: '0'
         type: choice
         options:
