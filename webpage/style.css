@@ -1,0 +1,124 @@
+/* Add styling rules for the header, navigation bar, main section, container, button, and footer
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  padding: 20px;
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#image-container img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#refresh-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#refresh-button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Use a responsive layout with media queries and flexbox
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  #image-container img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  #image-container img {
+    width: 150px;
+    height: 100px;
+  }
+
+  #refresh-button {
+    padding: 5px 10px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Use a color scheme and fonts that match the page title
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+nav a {
+  font-weight: bold;
+}
